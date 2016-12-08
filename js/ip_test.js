@@ -31,7 +31,7 @@ $(window).scroll(function () {
 /*=========================================*/
 
 /*=========================================*/
-$('#btn-tab-1').click(function() { //버튼 클릭 단순 로직
+$('#btn-tab-1').click(function() { 
     $('#btn-tab-1').addClass('active');
     $('#btn-tab-2').removeClass('active');
     $('#list-tab-1').slideDown('fast');
@@ -44,8 +44,7 @@ $('#btn-tab-2').click(function () {
     $('#list-tab-1').slideUp('fast');
 });
 
-//하단고정메뉴 로직
-//css대신에 윈도우의 크기에 상관없이 일정한 위치에 고정
+/*=========================================*/
 function windowresize(type) {
     $('.btn-down').css('margin-left', ($('.bodywrap').width() / 2) - 120);
 }
